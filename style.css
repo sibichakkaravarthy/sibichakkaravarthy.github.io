@@ -1,7 +1,14 @@
 /* Put anything under the body selector that you want to see across the entire website! */
 body {
 	font-family: "Open Sans"; /* Imported from Google fonts, needs a corresponding "link" tag in the HTML*/
-	background-color: #360773; /* A HEX value that represents a purple color */
+	/*background-color: #AE1AF7 ;  
+
+	/*  360773 A HEX value that represents a purple color 
+	background-image: url("img/bg.jpg"); 
+	background-repeat: no-repeat;
+	/* !important; */
+
+	background-image: linear-gradient(to left, #360773, #AE1AF7); 
 	color: white; /* Seems unintuitive, but this stands for text-color! */
 }
 
