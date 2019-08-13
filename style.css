@@ -1,0 +1,109 @@
+/* Put anything under the body selector that you want to see across the entire website! */
+body {
+	font-family: "Open Sans"; /* Imported from Google fonts, needs a corresponding "link" tag in the HTML*/
+	background-color: #360773; /* A HEX value that represents a purple color */
+	color: white; /* Seems unintuitive, but this stands for text-color! */
+}
+
+h1 {
+	font-size: 27pt; /* Lets you change the size of the font. */
+}
+
+h2 {
+	font-size: 22pt; 
+	text-decoration: underline; /* Underlines the text. Try "overline", "line-through", or some combo! */
+}
+
+p {
+	font-size: 13pt;
+}
+
+#about-me {
+	margin-top: 5%; /* Pushes down the "div" 5% down the page */
+}
+
+#self-photo {
+	height: 250px;
+	width: auto; /* Scales the width relative to the height*/
+	border-radius: 150px; /* Rounds the corners of the image by 150px */
+	float: left; /* Allows text to be to the right of the image */
+	margin-right: 30px; /* Gives breathing room between image and the text */
+}
+
+#projects {
+	margin-top: 2%; /* Starts the projects div 6% away from #about-me */
+}
+
+.image-container {
+	display: inline-block; /* Each element with the "image-container" class should be displayed side-by-side, but should also be interpreted as a separate block item */
+	padding-left: 40px; 
+}
+
+/* This CSS selector is selecting "img" tags that are inside of the element with the 
+   "image-container" class */
+.image-container img {
+	margin-top: 8px;
+	height: 150px;
+	width: auto;
+	border-width: 3.5px;
+	border-style: solid;
+	border-color: black;	
+	/* The three above properties can also be written in one line- "border: 3.5px solid black" */
+	border-radius: 2px;
+}
+
+/* When an image in an ".image-container" element is hovered over, displays a drop shadow */
+.image-container img:hover {
+	box-shadow: 5px 5px 10px black; /* A shadow that is displaced 5px to the left and 5px down with a blur of 10px */
+}
+
+/* CSS selectors can be grouped! All elements with these ids have these properties */
+#about-me, #projects, #classes, #contact, #resume, #editor, #grant {
+	margin-left: 28%;
+	margin-right: 28%;
+}
+
+#resume-link {
+	color: white; /* Text within an "a" tag automatically changes to a blue color, but we want to override that so that it will display white */
+}
+
+#resume-link:hover {
+	color: yellow;
+}
+
+#contact-icons {
+	list-style-type: none; /* Gets rid of the bullet points associated with list items */
+	padding-left: 0px; /* Gets rid of the indentation associated with list items */
+}
+
+/* This CSS selector is selecting "li" tags that are inside of the element with the 
+   "contact-icons" id */
+#contact-icons li {
+	display: inline; /* Shows all the icons in-line rather than all on separate lines */
+}
+
+/* This CSS selector is selecting img tags that are inside of the element with the 
+   "contact-icons" id */
+#contact-icons img {
+	width: 30px;
+	height: auto;
+	margin-right: 10px;
+	padding-bottom: 10px;
+	vertical-align: top;
+}
+
+/* This CSS selector is fun- we're telling the HTML that images that are links (use the "a") tag
+   should have a a solid white 3px thick bottom border when highlighted */
+a:hover > img {
+    border-bottom: 3px solid white;
+}
+
+
+#publications{
+    list-style-type: asterisks;
+    display: inline;
+    text-align: justify;
+
+}
+
+
