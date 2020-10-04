@@ -31,6 +31,11 @@
 				<p>currently working as <font style="color: solid black; 
 				-webkit-text-stroke: 0.75px blue !important;">Associate Professor</font> at <font style="color: solid black; 
 				-webkit-text-stroke: 0.75px blue !important;">Vellore Institute of Technology - Andhra Pradesh (VIT-AP) University </font>, Amaravati, India.</p> <!-- "p" stands for paragraph. Use it when you just want text to show up. -->
+				 <button type="button" class="collapsible">Click Here for my profile </button>
+				<div class="profile">
+ 				 	<p>Sibi Chakkaravarthy Sethuraman received his Ph.D from Anna University in the year 2018 and he is currently working as an Associate Professor in the School of Computer Science and Engineering at Vellore Institute of Technology – Andhra Pradesh (VIT-AP) University since September 2018. He was an Assistant Professor in the Department of Computer Science and Engineering at VIT-AP from May 2018 to September 2018. He is a visiting professor and a member of Artificial Intelligence Lab at University Systems of New Hampshire (KSC campus) in the Department of Computer Science. Furthermore, he is the coordinator for Artificial Intelligence and Robotics (AIR) Research Center at VIT-AP. He is the lead engineer for the project VISU, an Advanced 3D printed Humanoid Robot developed by VIT-AP. He is an active contributor of open source community and lead writer in top security magazines such as Pentestmag, eforensics. He is an active reviewer in many reputed journals including IEEE, Springer, Elsevier, IGI Global and Hindawi. Currently he is an associate editor for International journal of Cognitive Informatics and Natural Intelligence (IJCINI), IGI Global publisher. He is a recipient of DST fellowship.</p>
+				</div> 
+				<p> </p>
 			</div>
 		</div>
 
@@ -155,5 +160,21 @@
 		<!-- Make sure to close up all of the tags that require closing tags! -->
 		<br/>
 		<br/>
+		<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
 	</body>
 </html>
