@@ -1,0 +1,182 @@
+<!-- Comments in HTML look like this! They're pretty wild. -->
+<!DOCTYPE html>
+<html>
+	<!-- Content in the "head" tag doesn't actually show up on the page. It's mostly for setting up stuff like the title and linking CSS or JS. -->
+	<head>
+		<meta charset="utf-8">
+		<!-- This is the title that shows up in the tab -->
+		<title>Welcome to my page</title>
+		<!-- Here is where you tell your HTML where to look for in term of styling the page. We've linked a favicon (lil image that shows up in the tab), external CSS page ("style.css") and a Google Fonts font-->
+		<link rel="icon" type="image/x-icon" href="img/sibi_ford.jpg">
+		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans">
+	</head>
+	<!-- Here's where the fun begins! Stuff inside of the body tag is displayed on the page. -->
+	<body>
+		<br/> <!-- The "br" tag represents a line-break and is self-closing. -->
+		<div id="about-me" style=" margin-right: 10% !important ;"> <!-- "div"s group together related content. -->
+			<!-- Check it out- it's an image! You tell the page where the picture is located in your file directory using the "src" attribute. This picture is in the "img" folder of our project. There's also an "alt" attribute, which is a short description of the image that makes life easier for people who use screen-readers. -->
+			<img id="self-photo" src="img/sibi_ford.jpg" alt="Sibi Chakkaravarthy Sethuraman">
+			<br/>
+			<div >
+			<p class = "sibi" style ="font-size: 30px;  margin-top: 0.25%; 
+			top-right:5%;	color: solid black; -webkit-text-stroke: 0.75px yellow !important;">Sibi Chakkaravarthy Sethuraman</p>  
+			</div>
+			<!--<h2 style=" margin-top: 0.5% !important ;">Hello there!</h2>
+			 "h1" means header1. Use is for the most important header. -->
+			<div >
+				<p> <font style="color: solid black; 
+				-webkit-text-stroke: 0.75px yellow !important;">Ph.D </font> from <font style="color: solid black; 
+				-webkit-text-stroke: 0.75px yellow !important;">Anna University</font></p>
+				<p>currently working as <font style="color: solid black; 
+				-webkit-text-stroke: 0.75px blue !important;">Associate Professor</font> at <font style="color: solid black; 
+				-webkit-text-stroke: 0.75px blue !important;">Vellore Institute of Technology - Andhra Pradesh (VIT-AP) University </font>, Amaravati, India.</p> <!-- "p" stands for paragraph. Use it when you just want text to show up. -->
+				 <button type="button" class="collapsible">Click Here for my profile </button>
+				<div class="profile">
+ 				 	<p>Sibi Chakkaravarthy Sethuraman received his Ph.D from Anna University in the year 2018 and he is currently working as an Associate Professor in the School of Computer Science and Engineering at Vellore Institute of Technology – Andhra Pradesh (VIT-AP) University since September 2018. He was an Assistant Professor in the Department of Computer Science and Engineering at VIT-AP from May 2018 to September 2018. He is a visiting professor and a member of Artificial Intelligence Lab at University Systems of New Hampshire (KSC campus) in the Department of Computer Science. Furthermore, he is the coordinator for Artificial Intelligence and Robotics (AIR) Research Center at VIT-AP. He is the lead engineer for the project VISU, an Advanced 3D printed Humanoid Robot developed by VIT-AP. He is an active contributor of open source community and lead writer in top security magazines such as Pentestmag, eforensics. He is an active reviewer in many reputed journals including IEEE, Springer, Elsevier, IGI Global and Hindawi. Currently he is an associate editor for International journal of Cognitive Informatics and Natural Intelligence (IJCINI), IGI Global publisher. He is a recipient of DST fellowship.</p>
+				</div> 
+				<p> </p>
+			</div>
+		</div>
+
+		<div id="grant" style=" margin-top: 7% !important ;">
+			<h2>Research Grant</h2> <!-- "h2" means header2. Use it for less important headers than h1. -->
+			
+				<p style="color: solid black; 
+				-webkit-text-stroke: 0.5px red !important; "> GPU accelerated security system
+			</p> 
+			
+
+			<h4><pre style="margin-left: -52%; margin-right: -52% !important;">
+					Funding agency	: 	NVIDIA
+					Grant in INR	: 	1.7L
+					Duration 		: 	01.07.2018 - 01.07.2019
+			 </pre></h4>
+
+			 <h4><pre style="margin-left: -52%; margin-right: -52% !important;">
+					Funding agency	: 	University Systems of New Hampshire (KSC Campus)
+					Grant in INR	: 	$3000
+					Duration 		: 	September 2019
+			 </pre></h4>
+			
+			
+		</div>
+
+		<div id="projects" style=" margin-right: 10% !important;">
+			<h2>Research Projects</h2> <!-- "h2" means header2. Use it for less important headers than h1. -->
+			<p>Here are some projects I've worked on:</p>
+			<div class="column">
+				<!-- We're wrapping an "img" tag in a "a" tag, so when you click on the image, it redirects you to whatever link is referenced in the "href" property. target="_" means it will open the link in a new tab. -->
+				<ol>
+					<li> ViSU - A functional Humanoid Robot </li>
+					<li> Oh Yes (OS) - Operating System for ML and DL research </li>
+					<li> TARS - The Autonomous Rapsody Spider - For agriculture surveillance </li>
+					<li> Remote Health Monitoring System [Award Winner - Hackathon]</li>
+					<li> Automatic Leaf Vein Feature Extraction  </li>
+					<li> Face spoof attack detection </li>
+					<li> Automatic Phishing detection using machine learning techniques </li>
+					<li> Trajectory based Abnormal Event Detection in Video Traffic Surveillance </li>
+					<li> Intrusion Detection Honeypot </li>
+					<li> CEP based Hybrid Intrusion Detection System </li>
+					<li> Blackspace - a sophisticated malware </li>
+				</ol>
+			</div>
+		</div>
+		<br/>
+	  	<div id="classes" style=" margin-right: 10% !important;">
+			<h2>Publications</h2>	
+			<p>Here are some selective publications</p>
+			<!-- "ul" stands for unordered list: it's a list with bullet points rather than numbers. Try making an "ol" (ordered list). -->
+			<ol id = "publications" >
+				<!-- Each "li" (list object) is a different class -->
+				<li><font style="
+				-webkit-text-stroke: 0.5px red !important;  ">S. Sibi Chakkaravarthy</font>, Pranav Kompally and Srikar Reddy,“VISU: A 3D Printed Functional Robot for Crowd Surveillance”, <font style="color: solid black; font-weight: 200;  -webkit-text-stroke: 0.5px black !important;">IEEE Consumer Electronics, IEEE, (SCIE). (Accepted) </font></li>
+				<li><font style=" 
+				-webkit-text-stroke: 0.5px red !important;  ">S. Sibi Chakkaravarthy</font>, D. Sangeetha, Meenalosini Vimal Cruz, V. Vaidehi and Vaidehi V, “Design of Intrusion Detection Honeypot using Social Leopard Algorithm to detect IoT ransomware attacks", <font style="color: solid black; font-weight: 200; -webkit-text-stroke: 0.5px black !important ;"> IEEE Access, IEEE, vol. 8, pp. 169944-169956, 2020.(SCIE).</font></li>
+				<li>Jatin Karthick Tripathy, <font style=" 
+				-webkit-text-stroke: 0.5px red !important;  ">S. Sibi Chakkaravarthy</font>, Suresh Chandra Satapathy, Madhulika Sahoo, Vaidehi V, "ALBERT based Fine-Tuning model for Cyberbullying Analysis", <font style="color: solid black; font-weight: 200; -webkit-text-stroke: 0.5px black !important ;"> Multimedia Systems, Springer, 2020. (SCIE).</font></li>
+
+				<li>Meenalosini Vimal Cruz, Anupama Namburu, BKSP Kumar Raju Alluri, Sumathi D, Suresh Chandra Satapathy and <font style=" 
+				-webkit-text-stroke: 0.5px red !important;  ">S. Sibi Chakkaravarthy</font>, "Analysis of COVID-19 Pandemic - Origin, Global Impact and Indian Therapeutic Solutions for infectious diseases", <font style="color: solid black; font-weight: 200; -webkit-text-stroke: 0.5px black !important ;"> Indian Journal of Traditional Knowledge (SCIE). (Accepted).</font></li>
+
+				<li>Meenalosini Vimal Cruz, Anupama Namburu, Suresh Chandra Satapathy, Matthew Pettensberg and <font style=" 
+				-webkit-text-stroke: 0.5px red !important;  ">S. Sibi Chakkaravarthy</font>, "Skin Cancer classification using Convolutional Capsule Network (CapsNet)", <font style="color: solid black; font-weight: 200; -webkit-text-stroke: 0.5px black !important ;"> Journal of Scientific and Industrial Research. (SCIE). (Accepted).</font></li>
+
+				<li>Joshan Athaneious, S. Vasuhi, V. Vaidehi, Shiny Christobel and <font style=" 
+				-webkit-text-stroke: 0.5px red !important;  ">S. Sibi Chakkaravarthy</font>, “Detecting Abnormal Events in Traffic Video Surveillance using Super-Orientation Optical Flow feature", <font style="color: solid black; font-weight: 200; -webkit-text-stroke: 0.5px black !important ;"> IET Image Processing, March, 2020, IET. (SCIE).</font></li>
+				<li><font style=" 
+				-webkit-text-stroke: 0.5px red !important;  ">S. Sibi Chakkaravarthy</font>, V. Vaidehi and Steven Walczak, “Cyber Attacks on Healthcare Devices Using Unmanned Aerial Vehicles", <font style="color: solid black; font-weight: 200; -webkit-text-stroke: 0.5px black !important ;"> Journal of Medical Systems, Vol.44, Article 29, Springer, (SCIE).</font></li>
+				<li>D. Arivudainambi, K.A. Varun Kumar, <font style=" 
+				-webkit-text-stroke: 0.5px red !important;  "> S. Sibi Chakkaravarthy </font>, P. Visu, “Malware traffic classification using principal component analysis and artificial neural network for extreme surveillance”, <font style="color: solid black; font-weight: 200; -webkit-text-stroke: 0.5px black !important; "> Computer Communications, Vol.147, November, 2019, pp.50-57, Elsevier, (SCIE). </font></li>
+				<li> Akshay T, <font style=" 
+				-webkit-text-stroke: 0.5px red !important;  "> S. Sibi Chakkaravarthy </font>, D. Sangeetha, M. Venkata Rathnam, V. Vaidehi,“Role Based Policy to Maintain Privacy of Patient Health Records in Cloud”, <font style="color: solid black; font-weight: 200; -webkit-text-stroke: 0.5px black !important;  "> Journal of Super Computing, Vol.75, Issue 9, June 2019, pp.5866–5881, Springer, (SCIE).</font></li>
+				<li><font style=" 
+				-webkit-text-stroke: 0.5px red !important;  ">S. Sibi Chakkaravarthy</font>, D. Sangeetha and V. Vaidehi,“Intrusion Detection System to detect Wireless attacks in IEEE 802.11 networks”, <font style="color: solid black; font-weight: 200; -webkit-text-stroke: 0.5px black !important ;">IET networks, July 2019, Volume 8, Issue 4, pp. 219- 232, IET.</font></li>
+
+				<li><font style="
+				-webkit-text-stroke: 0.5px red !important;  ">S. Sibi Chakkaravarthy</font>, D. Sangeetha and V. Vaidehi,“A Survey on malware analysis and mitigation techniques”, <font style="color: solid black; font-weight: 200;  -webkit-text-stroke: 0.5px black !important;">Computer Science Review, Vol. 32, pp 1 - 23, May 2019, Elsevier, (SCIE).</font></li>
+
+				<li>Jerart Julus L, Manimegalai D, <font style="; 
+				-webkit-text-stroke: 0.5px red !important;  ">S. Sibi Chakkaravarthy </font>, “FBMC-Based Dispersion Compensation Using Artificial Neural Network Equalization for Long-Reach Passive Optical Network”, <font style="color: solid black; font-weight: 200; -webkit-text-stroke: 0.5px black !important ; "> International Journal of Wavelets, Multiresolution and Information Processing, April 2019, World Scientific Publisher, (SCIE). </font></li>
+
+				<li> Joshan Athaneious, <font style=" 
+				-webkit-text-stroke: 0.5px red !important;  ">S. Sibi Chakkaravarthy </font>, S. Vasuhi and V. Vaidehi, “Trajectory based Abnormal Event Detection in Video Traffic Surveillance using General Potential Data field with Spectral clustering”, <font style="color: solid black; font-weight: 200; -webkit-text-stroke: 0.5px black !important; ">Multimedia Tools and Applications, Vol.78, Issue. 14, July 2019, pp. 19877 - 19903, Springer, (SCIE). </font></li>
+
+				<li> <font style="
+				-webkit-text-stroke: 0.5px red !important;  ">S. Sibi Chakkaravarthy </font>, D. Sangeetha, M.Venkata Rathnam, K.Sri nithi, V. Vaidehi; "Futuristic cyber-attacks", <font style="color: solid black; font-weight: 200; -webkit-text-stroke: 0.5px black !important ; ">International Journal of Knowledge based and Intelligent System Engineering, Vol.22, no.3, pp. 105- 204, 2018. IOS press.</font></li>
+
+				<li> <font style="
+				-webkit-text-stroke: 0.5px red !important;  ">S. Sibi Chakkaravarthy </font>, P.Rajesh and V. Vaidehi,"Hybrid analysis technique to detect Advanced Persistent Threats”,<font style="color: solid black; font-weight: 200; -webkit-text-stroke: 0.5px black !important; "> International Journal of Intelligent Information Technologies, Volume 14, Issue Q2, pp.59 -76, 2018, IGI Global. </font></li>
+
+				<li> V Mohanraj, <font style=" 
+				-webkit-text-stroke: 0.5px red !important;  "> S. Sibi Chakkaravarthy </font>, I Gogul, V Sathiesh Kumar, Ranajit Kumar, V Vaidehi ; "Hybrid Feature Descriptors to Detect face Spoof Attacks", <font style="color: solid black; font-weight: 200; -webkit-text-stroke: 0.5px black !important; ">Journal of Intelligent & Fuzzy Systems, vol. 34, no. 3, pp. 1411-1419, 2018, IOS press, (SCIE).  </font></li>
+
+				<li> 	D. Arivudainambi, Varun Kumar K.A and <font style=" 
+				-webkit-text-stroke: 0.5px red !important;  ">S. Sibi Chakkaravarthy </font>; "LION IDS: A meta-heuristic approach to detect DDoS attacks against Software Defined Networks", <font style="color: solid black; font-weight: 200; -webkit-text-stroke: 0.5px black !important; ">Neural Computing and Applications, Vol. 31, Issue 5, May 2019, Springer, (SCIE).</font></li>
+			</ol>
+		</div>
+		<br/>
+
+		<div id = "editor" style=" margin-top: -3%; margin-right: 10% !important;" >
+			<h2>Editorship</h2>
+			<ol>
+				<li><font style="-webkit-text-stroke: 0.5px red !important;">Associate Editor</font>, International Journal of Cognitive Informatics and Natural Intelligence (IJCINI), IGI Global Publisher. </li>
+			</ol>
+		</div>
+		<div id="contact">
+			<h2>Contact Me</h2>
+			<p>Interested in knowing more? Check out <a href="res/sibi_resume.pdf" id="resume-link" target="_">my resume!</a></p>
+			<p>Google Scholar Profile <a href="https://scholar.google.co.in/citations?user=8pKeh40AAAAJ&hl=en" id="resume-link" target="_">Click here</a></p>
+			<p>Interested in connecting?</p>
+			<!-- "ul" stands for unordered list: it's a list with bullet points rather than numbers. Try making an "ol" (ordered list). -->
+			<ul id="contact-icons">
+				<!-- Each "li" (list object) is an "img" that is linked to a particular social media using the "a" tag. If you click on the img, it will redirect you to whatever link is specified as the "href" in the "a" tag. -->
+				<li class="contact-img"><a href="https://in.linkedin.com/in/sibi-chakkaravarthy-sethuraman-7aba651a" target="_blank"><img src="img/linked-in.png" alt="LinkedIn Logo"></a></li>
+				<!--<li class="contact-img"><a href="[INSERT TWITTER URL]" target="_blank"><img src="img/twitter.png" alt="Twitter Logo"></a></li>
+				<li class="contact-img"><a href="[INSERT FACEBOOK URL]" target="_blank"><img src="img/facebook.png" alt="Facebook Logo"></a></li>
+				<li class="contact-img"><a href="[INSERT INSTAGRAM URL]" target="_blank"><img src="img/instagram.png" alt="Instagram Logo"></a></li> -->
+				<li class="contact-img"><a href="https://github.com/sibichakkaravarthy" target="_blank"><img src="img/github.png" alt="Github Logo"></a></li>
+				<li class="contact-img"><a href="sb.sibi@gmail.com" target="_blank"><img src="img/email.png" alt="Email"></a></li>
+			</ul>
+		</div>
+		<!-- Make sure to close up all of the tags that require closing tags! -->
+		<br/>
+		<br/>
+		<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
+	</body>
+</html>
