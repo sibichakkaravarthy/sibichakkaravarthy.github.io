@@ -299,7 +299,11 @@ img{
   margin-left: 40%;
 }
 .home__p {
-  padding-inline-start: var(--mb-1);
+
+padding-inline-start:1px;
+padding-left: -10px;
+writing-mode: horizontal-tb;
+direction: rtl;
 }
 .home__title-color{
   color: var(--first-color);
@@ -317,12 +321,19 @@ img{
   position: absolute;
   right: 0;
   bottom: 0;
-  width: 230px;
+  width: 200px;
   margin-right: 50%;
+}
+.home__bio{
+  position: absolute;
+  margin-left: 6%;
+  top: 60%;
+  width: max-content;
+  
 }
 
 .sibi {
-  width: 300px;
+  width: 200px;
   clip-path: circle();
 }
 .abt {
