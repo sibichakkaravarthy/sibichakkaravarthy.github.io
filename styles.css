@@ -1,0 +1,499 @@
+html {
+    scroll-behavior: smooth;
+}
+
+:root {
+    --primary: #ffaa00;
+    --secondary: #fb5607;
+    --text1: #fe5973;
+    --text2: #17ebfc;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    height: 100vh;
+    background-image: linear-gradient(to bottom right, var(--primary), var(--secondary));
+    margin: 0;
+}
+
+.main {
+    background-image: url(images/main_bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 9vh 9vw;
+    margin: 0;
+    overflow: hidden;
+}
+
+.innerMain {
+    background-color: #444;
+    width: calc(100vw - 18vw);
+    height: calc(100vh - 18vh);
+    border-radius: 35px;
+}
+
+.rightMain {
+    background-color: #222;
+    width: 100%;
+    height: 100%;
+    border-radius: 35px;
+}
+
+.leftMain {
+    width: 100%;
+    height: 100%;
+}
+
+.leftMain .inner {
+    width: fit-content;
+    margin: 80px auto;
+    text-align: center;
+}
+
+.row {
+    margin: 0;
+}
+
+.profilePic {
+    width: 150px;
+    border-radius: 75px;
+    border: white 3px solid;
+}
+
+.profilePicWrapper {
+    margin: 0 auto;
+}
+
+.mainName {
+    color: white;
+    margin-top: 10px;
+}
+
+.fab,
+.fas {
+    padding: 12px;
+    width: 40px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+    color: white;
+    transition: all 500ms;
+}
+
+.fab:hover,
+.fas:hover {
+    background: #222;
+    color: white;
+}
+
+.btn {
+    margin-top: 15px;
+    padding: 10px 40px;
+    border-radius: 20px;
+}
+
+.btn-primary {
+    background-color: var(--primary);
+    border-color: var(--secondary);
+}
+
+.btn-primary:hover {
+    background-color: var(--secondary);
+    border-color: var(--primary);
+}
+
+.homeMain {
+    color: white;
+    text-align: center;
+    padding: calc(41vh - 150px) 30px;
+}
+
+.homeHeading {
+    font-size: 50px;
+}
+
+.homeDesc {
+    color: rgba(255, 255, 255, 0.712);
+    margin-top: 10px;
+}
+
+.sideMenu {
+    width: 80px;
+    position: absolute;
+    right: 30px;
+    padding: 13px;
+    background-color: #444;
+    border-radius: 50px;
+}
+
+.menuItem {
+    font-size: 30px;
+    width: fit-content;
+}
+
+.menuItem .fas:hover {
+    transition: all 100ms;
+    background: none;
+    color: var(--secondary);
+}
+
+.sideMenu2 {
+    width: 70px;
+    position: absolute;
+    right: 30px;
+    padding: 13px;
+    background-color: #444;
+    border-radius: 50px;
+    bottom: 9vh;
+}
+
+.transition-swipeup {
+    transition: 500ms;
+    transform: translateY(0);
+    opacity: 1;
+    transform-origin: top;
+}
+
+html.is-animating .transition-swipeup {
+    transform: translateY(100%);
+    opacity: 0;
+}
+
+html.is-leaving .transition-swipeup {
+    opacity: 0;
+    transform: translateY(-100%);
+}
+
+.transition-swipeleft {
+    transform: translateX(0);
+    transition: 500ms;
+    opacity: 1;
+    transform-origin: center;
+}
+
+html.is-animating .transition-swipeleft {
+    transform: translateX(100%);
+    opacity: 0;
+}
+
+html.is-leaving .transition-swipeleft {
+    opacity: 0;
+    transform: translateX(-100%);
+}
+
+.transition-swiperight {
+    transform: translateX(0);
+    transition: 500ms;
+    opacity: 1;
+    transform-origin: center;
+}
+
+html.is-animating .transition-swiperight {
+    transform: translateX(-100%);
+    opacity: 0;
+}
+
+html.is-leaving .transition-swiperight {
+    opacity: 0;
+    transform: translateX(100%);
+}
+
+.transition-swipedown {
+    transition: 500ms;
+    transform: translateY(0);
+    opacity: 1;
+    transform-origin: top;
+}
+
+html.is-animating .transition-swipedown {
+    transform: translateY(-100%);
+    opacity: 0;
+}
+
+html.is-leaving .transition-swipedown {
+    opacity: 0;
+    transform: translateY(100%);
+}
+
+.rightMain .inner {
+    padding: 20px;
+    max-width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+}
+
+.rightMain .inner2 {
+    padding: 20px;
+    max-width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+}
+
+::-webkit-scrollbar {
+    width: 10px
+}
+
+::-webkit-scrollbar-track {
+    background: #080808
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555
+}
+
+.active .fas {
+    color: var(--secondary);
+}
+
+.rightMain {
+    padding: 30px;
+    color: white;
+}
+
+.table {
+    margin-top: 70px;
+    color: white;
+}
+
+tr:hover {
+    background-color: rgb(63, 62, 62);
+}
+
+th {
+    color: var(--text2);
+}
+
+#tile {
+    padding: 15px;
+}
+
+#skills_tile #tile .tileinner {
+    text-align: center;
+    background-color: #444;
+    padding: 15px;
+    border-radius: 30px;
+}
+
+#text {
+    margin-top: 10px;
+}
+
+.project {
+    text-align: left;
+    margin-top: 40px;
+    margin-bottom: 50px;
+    --title-color: var(--text1);
+    --title-hover-color: black;
+    --desc-color: white;
+    --desc-hover-color: #fdf9d5;
+}
+
+.project .title {
+    transition: all ease 500ms;
+    background-color: var(--title-color);
+    border-radius: 10px;
+    width: fit-content;
+    padding: 10px;
+    color: white;
+    font-weight: bold;
+    margin: -60px 0 10px -45px;
+    z-index: 1;
+}
+
+.project .description {
+    transition: all ease 500ms;
+    background-image: linear-gradient(to bottom right, var(--primary), var(--secondary));
+    padding: 35px 30px 20px 30px;
+    border-radius: 15px;
+    z-index: 0;
+    color: white;
+}
+
+.project .description:hover {
+    --title-color: var(--title-hover-color);
+    --desc-color: var(--desc-hover-color);
+}
+
+.link a {
+    color: var(--text2);
+}
+
+.bottomMenu {
+    display: none;
+}
+
+@media(max-width:1100px) {
+    body {
+        height: calc(100vh - 100px);
+    }
+    .bottomMenu {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        display: inline-flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        width: 100vw;
+        background-color: #222;
+    }
+    .bottomMenu .inner {
+        width: fit-content;
+        margin: 0 auto;
+    }
+    .leftMain {
+        display: none;
+    }
+    .main {
+        padding: 20px;
+    }
+    .innerMain {
+        width: 100%;
+        margin: 0;
+        text-align: center;
+        height: calc(100vh - 150px);
+    }
+    .sideMenu {
+        display: none;
+    }
+    .sideMenu2 {
+        display: none;
+    }
+    .homeMain {
+        padding: 20px 0px;
+    }
+    .menuItem {
+        padding: 5px;
+    }
+    .rightMain .inner {
+        padding: 0;
+    }
+    .rightMain .inner2 {
+        padding: 0;
+        overflow-x: hidden;
+    }
+    .project .title {
+        margin: -60px 0 10px 0px;
+    }
+    .rightMain {
+        padding: 20px;
+    }
+    .tableWrapper {
+        overflow-x: scroll;
+        font-size: 13px;
+    }
+}
+
+hr {
+    border: white 1px solid;
+}
+
+.grantTile {
+    margin-top: 20px;
+}
+
+.grantinner {
+    background-color: #444;
+    padding: 25px;
+    border-radius: 35px;
+}
+
+.grantinner b {
+    color: var(--text2);
+}
+
+.grantbody {
+    margin-top: 20px;
+    text-align: center;
+}
+
+@media (min-width:700px) {
+    .grantbody {
+        margin-top: 100px;
+    }
+}
+
+.projectTile .projectinner {
+    background-color: #444;
+    padding: 20px;
+    border-radius: 35px;
+    height: 100%;
+    min-width: 100%;
+}
+
+.projectbody {
+    text-align: center;
+}
+
+.innerrow {
+    height: fit-content;
+    width: 100%;
+}
+
+.innerrow h3 {
+    color: var(--text2);
+}
+
+.projectTile {
+    margin-top: 20px;
+    min-height: 100%;
+}
+
+.publicationTile {
+    margin: 15px;
+    background-image: linear-gradient(to bottom right, var(--primary), var(--secondary));
+    color: black;
+    padding: 25px;
+    border-radius: 35px;
+}
+
+.projectTile a {
+    color: var(--text1);
+}
+
+.galleryImage {
+    width: 100%;
+    border-radius: 15px;
+}
+
+.galleryItem {
+    border-radius: 15px;
+}
+
+.galleryAnchor {
+    margin-top: 25px;
+    border-radius: 25px;
+    min-width: 100%;
+    min-height: 150px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.home-sm {
+    display: none;
+}
+
+@media(max-width:600px) {
+    .homeHeading {
+        font-size: 2rem;
+    }
+    .bottomMenu {
+        text-align: center;
+        width: 100%;
+        font-size: 15px;
+    }
+    .fas {
+        font-size: 22px;
+    }
+    .home-sm {
+        display: block;
+    }
+    .home-bg {
+        display: none;
+    }
+}
